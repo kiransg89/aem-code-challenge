@@ -16,15 +16,12 @@
 			 if(data){
 				 maxAge = parseInt(data.maxAge);
 				 minAge = parseInt(data.minAge);
-                 console.log( "Min Age is ", minAge);
-		    	 console.log( "Max Age is ", maxAge);
 			 }
 		 });
 	}
 	
 	$( document ).ready(function() {
 		getMinMax();
-    	console.log( "ready!" );
 	});
 	
 	$(document).off("click", "#cmp-submit").on("click", "#cmp-submit", function (event) {
