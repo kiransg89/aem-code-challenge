@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/conf/anf-code-challenge" mode="merge"/>
-    <filter root="/content/anf-code-challenge" mode="merge"/>
+    <filter root="/content/anf-code-challenge" mode="replace"/>
     <filter root="/content/dam/anf-code-challenge" mode="merge"/>
     <filter root="/content/experience-fragments/anf-code-challenge" mode="merge"/>
+    <filter root="/etc/age" mode="merge"/>
+    <filter root="/var/workflow/models/anf-form-submission"/>
 </workspaceFilter>

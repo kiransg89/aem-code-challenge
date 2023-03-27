@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-03-25T21:36:41.963-04:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/anf-code-challenge/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Exercises"
+        sling:resourceType="anf-code-challenge/components/page">
+        <logo
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="anf-code-challenge/components/logo"/>
+        <title
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="anf-code-challenge/components/title"/>
+        <topnav
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="anf-code-challenge/components/topnav"/>
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <text
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="anf-code-challenge/components/text"
+                text="&lt;p>This is a content page&lt;/p>"
+                textIsRich="true"/>
+        </par>
+    </jcr:content>
+    <exercise-one/>
+    <exercise-two/>
+    <exercise-three/>
+</jcr:root>

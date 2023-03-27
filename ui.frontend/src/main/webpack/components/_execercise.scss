@@ -1,0 +1,21 @@
+.cmp-exer-two{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.cmp-exer-two__anchor{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 45%;
+	margin: 1%;
+	background-color: #423f3f;
+}
+.cmp-exer-two__image{
+	width: 100%;
+}
+.cmp-exer-two__author-container{
+	display: inline-flex;
+    width: 30%;
+    justify-content: space-around;
+}

@@ -65,7 +65,7 @@ module.exports = {
       ...libsBaseConfig,
       name: 'clientlib-site',
       categories: ['anf-code-challenge.site'],
-      dependencies: ['anf-code-challenge.dependencies'],
+      dependencies: ['anf-code-challenge.dependencies', 'jquery', 'jquery.ui'],
       assets: {
         // Copy entrypoint scripts and stylesheets into the respective ClientLib
         // directories

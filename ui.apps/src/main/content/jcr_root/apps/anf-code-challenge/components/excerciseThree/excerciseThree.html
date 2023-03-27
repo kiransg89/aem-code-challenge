@@ -1,0 +1,39 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2015 Adobe
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+<div data-sly-use.exerThreeModel="com.anf.core.models.ExerciseThreeModel"
+     data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-test.queryResult="${exerThreeModel.pagesByPathQuery}"
+     id="${component.id}"
+     class="cmp-exer-three"> 
+     <h1> Using Query Builder</h1>    
+     <sly data-sly-list="${exerThreeModel.pagesByPathQuery}">
+     	<a href="${item.path}">     		
+		    <p class="cmp-exer-three__headline">
+		    	${item.title}
+		    </p>
+     	</a>     	
+	</sly>
+	<h1> Using Query with Streams</h1>    
+	<sly data-sly-list="${exerThreeModel.pagesByPathRefFilter}">
+     	<a href="${item.path}">     		
+		    <p class="cmp-exer-three__headline">
+		    	${item.title}
+		    </p>
+     	</a>     	
+	</sly>     
+</div>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !queryResult, classAppend='cmp-exerc-three'}"></sly>

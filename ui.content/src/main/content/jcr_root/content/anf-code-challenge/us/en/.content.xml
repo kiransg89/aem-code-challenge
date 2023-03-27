@@ -2,81 +2,45 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
-        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:allowedTemplates="/conf/anf-code-challenge/settings/wcm/templates/page-content"
+        cq:lastModified="{Date}2023-03-25T21:43:20.770-04:00"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/anf-code-challenge/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
-        jcr:title="en"
+        jcr:title="EN"
         sling:resourceType="anf-code-challenge/components/page"
-        pageTitle="ANF Code Challenge">
+        anfCodeChallenge="{Boolean}true">
         <root
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="anf-code-challenge/components/container"
-            layout="responsiveGrid">
+            sling:resourceType="anf-code-challenge/components/container">
             <container
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="anf-code-challenge/components/container">
                 <title
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="anf-code-challenge/components/title"/>
-                <container
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="anf-code-challenge/components/container"
-                    layout="responsiveGrid">
-                    <teaser
-                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Epic Journey"
-                        sling:resourceType="anf-code-challenge/components/teaser"
-                        actionsEnabled="false"
-                        descriptionFromPage="false"
-                        textIsRich="true"
-                        titleFromPage="false">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </teaser>
-                    <teaser_copy
-                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Epic Journey"
-                        sling:resourceType="anf-code-challenge/components/teaser"
-                        actionsEnabled="false"
-                        descriptionFromPage="false"
-                        textIsRich="true"
-                        titleFromPage="false">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </teaser_copy>
-                    <teaser_copy_1579324932
-                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Epic Journey"
-                        sling:resourceType="anf-code-challenge/components/teaser"
-                        actionsEnabled="false"
-                        descriptionFromPage="false"
-                        textIsRich="true"
-                        titleFromPage="false">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </teaser_copy_1579324932>
-                    <helloworld
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="anf-code-challenge/components/helloworld"
-                        text="lalala :)"/>
-                </container>
             </container>
         </root>
     </jcr:content>
+    <page-1/>
+    <page-2/>
+    <page-3/>
+    <page-4/>
+    <page-5/>
+    <page-6/>
+    <page-7/>
+    <page-8/>
+    <page-9/>
+    <page-10/>
+    <page-11/>
+    <page-12/>
+    <page-13/>
+    <page-14/>
+    <page-15/>
+    <page-16/>
+    <page-17/>
+    <page-18/>
+    <page-19/>
+    <page-20/>
+    <exercises/>
 </jcr:root>
